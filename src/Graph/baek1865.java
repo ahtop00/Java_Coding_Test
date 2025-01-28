@@ -39,8 +39,8 @@ public class baek1865 {
                 int e = Integer.parseInt(st.nextToken()) - 1;
                 int t = Integer.parseInt(st.nextToken());
 
-                list.get(s).add(new Main.Edge(e, t));
-                list.get(e).add(new Main.Edge(s, t));
+                list.get(s).add(new Edge(e, t));
+                list.get(e).add(new Edge(s, t));
             }
 
             for (int i = 0; i < W; i++) {
@@ -49,7 +49,7 @@ public class baek1865 {
                 int e = Integer.parseInt(st.nextToken()) - 1;
                 int t = Integer.parseInt(st.nextToken());
 
-                list.get(s).add(new Main.Edge(e, -t));
+                list.get(s).add(new Edge(e, -t));
             }
 
             boolean cycleCheck = false;
